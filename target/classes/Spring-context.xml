@@ -26,4 +26,5 @@
    </bean>
    
    <context:component-scan base-package="es.salesianos.edu.spring" />
+   <context:annotation-config/>
 </beans>
