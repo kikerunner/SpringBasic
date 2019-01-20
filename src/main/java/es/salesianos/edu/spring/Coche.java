@@ -11,7 +11,11 @@ public class Coche {
 		ApplicationContext context = new ClassPathXmlApplicationContext("Spring-context.xml");
 	    motor = (Motor) context.getBean("motor");
 	    Frenos frenos = (Frenos) context.getBean("frenos");
+	    Luces lucesCortas = (Luces) context.getBean("lucesCortas");
+	    Luces lucesLargas = (Luces) context.getBean("lucesLargas");
 	    motor.arrancar();
 	    frenos.braking();
+	    System.out.println(lucesCortas.getIluminacion());
+	    System.out.println(lucesLargas.getIluminacion());
 	}
 }

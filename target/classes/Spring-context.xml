@@ -16,7 +16,11 @@
    </bean>
    <bean id = "volante" class = "es.salesianos.edu.spring.Volante">
    </bean>
-   <bean id = "luces" class = "es.salesianos.edu.spring.Luces">
+   <bean id = "lucesCortas" class = "es.salesianos.edu.spring.Luces">
+   		<property name="iluminacion" value="Cortas"></property>
+   </bean>
+   <bean id = "lucesLargas" class = "es.salesianos.edu.spring.Luces">
+   		<property name="iluminacion" value="Largas"></property>
    </bean>
    <bean id = "coche" class = "es.salesianos.edu.spring.Coche">
    </bean>
