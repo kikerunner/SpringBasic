@@ -17,5 +17,6 @@ public class Coche {
 	    frenos.braking();
 	    System.out.println(lucesCortas.getIluminacion());
 	    System.out.println(lucesLargas.getIluminacion());
+	    
 	}
 }
