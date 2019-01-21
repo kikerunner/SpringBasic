@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:util="http://www.springframework.org/schema/util"
+   xmlns:context="http://www.springframework.org/schema/context"
+   
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context 
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd
+   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd"
+   >
+   
+
+   <bean id = "motor" class = "es.salesianos.edu.spring.Motor">
+   </bean>
+   <bean id = "volante" class = "es.salesianos.edu.spring.Volante">
+   </bean>
+   <bean id = "lucesCortas" class = "es.salesianos.edu.spring.Luces">
+   		<property name="iluminacion" value="Cortas"></property>
+   </bean>
+   <bean id = "lucesLargas" class = "es.salesianos.edu.spring.Luces">
+   		<property name="iluminacion" value="Largas"></property>
+   </bean>
+   <bean id = "coche" class = "es.salesianos.edu.spring.Coche">
+   </bean>
+   <bean id = "MangualGearBox" class = "es.salesianos.edu.spring.GearBox">
+   <property name="marchas">
+   		<util:list>
+   		<value>1</value>
+   		<value>2</value>
+   		<value>3</value>
+   		<value>4</value>
+   		<value>5</value>
+   		<value>R</value>
+   		</util:list>
+   </property>
+   </bean>
+   <bean id = "AutomaticGearBox" class = "es.salesianos.edu.spring.GearBox">
+   <property name="marchas">
+   		<util:list>
+   		<value>1</value>
+   		<value>2</value>
+   		<value>3</value>
+   		<value>D</value>
+   		<value>R</value>
+   		</util:list>
+   </property>
+   </bean>
+   <bean id="maletero" class="es.salesianos.edu.spring.Maletero">
+   		<property name="camaraTrasera" ref="camaraTrasera"></property>
+   </bean>
+   <bean id="camaraTrasera" class="es.salesianos.edu.spring.CamaraTrasera">
+   </bean>
+   <context:component-scan base-package="es.salesianos.edu.spring, es.salesianos.edu.servlet" />
+   <context:annotation-config/>
+</beans>
