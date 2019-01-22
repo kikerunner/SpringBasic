@@ -9,6 +9,7 @@
 /home/kike/GIT/SpringBasic/src/main/java/es/salesianos/edu/model/Pelicula.java
 /home/kike/GIT/SpringBasic/src/main/java/es/salesianos/edu/repository/Repository.java
 /home/kike/GIT/SpringBasic/src/main/java/es/salesianos/edu/spring/Coche.java
+/home/kike/GIT/SpringBasic/src/main/java/es/salesianos/edu/controller/HelloController.java
 /home/kike/GIT/SpringBasic/src/main/java/es/salesianos/edu/spring/Maletero.java
 /home/kike/GIT/SpringBasic/src/main/java/es/salesianos/edu/spring/Frenos.java
 /home/kike/GIT/SpringBasic/src/main/java/es/salesianos/edu/connection/ConnectionManager.java
