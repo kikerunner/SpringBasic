@@ -53,6 +53,6 @@
    </bean>
    <bean id="camaraTrasera" class="es.salesianos.edu.spring.CamaraTrasera">
    </bean>
-   <context:component-scan base-package="es.salesianos.edu.spring" />
+   <context:component-scan base-package="es.salesianos.edu.spring, es.salesianos.edu.servlet" />
    <context:annotation-config/>
 </beans>

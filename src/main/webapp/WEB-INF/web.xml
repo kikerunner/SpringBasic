@@ -17,7 +17,7 @@
 	</listener>
 	
 	<servlet>
-		<servlet-name>HelloSerlvet</servlet-name>
+		<servlet-name>HelloServlet</servlet-name>
 		<servlet-class>es.salesianos.edu.servlet.HelloServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
